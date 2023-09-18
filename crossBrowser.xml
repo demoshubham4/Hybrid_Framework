@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TechpandaSuite" parallel="tests"> 
+	
+  <test thread-count="5" name="TechpandaTest_Edge">
+	  <parameter name="Browser" value="Edge"></parameter>	  
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest"/>
+    </classes>
+  </test> <!-- TechpandaTest -->
+  
+    <test thread-count="5" name="TechpandaTest_Chrome">
+	  <parameter name="Browser" value="Chrome"></parameter>	  
+    <classes>
+      <class name="testCases.TC_001_AccountRegistrationTest"/>
+    </classes>
+  </test> <!-- TechpandaTest -->
+  
+</suite> <!-- TechpandaSuite -->
